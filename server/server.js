@@ -158,11 +158,11 @@ const connectToDatabase = async function () {
  * @return {object} server
  */
 const startServer = async function () {
-	await registerMiddlewares();
-	await registerMethods();
-	await registerRoutes();
-	await registerDBModels();
-	await connectToDatabase();
+	//await registerMiddlewares();
+	//await registerMethods();
+	//await registerRoutes();
+	//await registerDBModels();
+	//await connectToDatabase();
 	return new Promise((resolve, reject) =>
 		hapiServer.start(err => {
 			if (err) {
